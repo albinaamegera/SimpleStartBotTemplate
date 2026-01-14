@@ -16,7 +16,7 @@ def get_config() -> Config:
 
     bot = BotSettings(
         token=env.str("BOT_TOKEN"),
-        admins=env.list("ADMINS"),
+        admins=env.list("ADMIN_IDS"),
     )
 
     return Config(
